@@ -1,0 +1,12 @@
+
+
+
+/*---COLORS---*/
+:root {
+    --darkBlue: hsl(233, 47%, 7%);
+    --darkDesaturatedBlue: hsl(244, 38%, 16%);
+    --lightViolet: hsl(277, 64%, 61%);
+    --mainWhite: hsl(0, 0%, 100%);
+    --secondaryWhite: hsla(0, 0%, 100%, 0.75);
+    --tertiaryWhite: hsla(0, 0%, 100%, 0.6);
+}
