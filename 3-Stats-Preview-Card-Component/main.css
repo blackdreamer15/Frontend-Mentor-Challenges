@@ -99,6 +99,7 @@ main.main-content section.card-content section.card-stats div.card-stats-1 {
     justify-content: center;
     align-items: flex-start;
     flex: 30%;
+    padding: 0;
 }
 
 main.main-content section.card-content section.card-stats div.card-stats-2 {
@@ -118,3 +119,16 @@ main.main-content section.card-content section.card-stats div.card-stats-3 {
     flex: 30%;
 }
 
+/*--FOOTER--*/
+footer.attribution {
+    text-align: center;
+}
+
+footer.attribution p a {
+    text-decoration: none;
+    transition: color ease-in-out;
+}
+
+footer.attribution p a:hover {
+    color: var(--lightViolet);
+}
