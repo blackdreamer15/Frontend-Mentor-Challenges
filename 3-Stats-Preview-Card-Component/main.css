@@ -12,12 +12,10 @@
 }
 
 /*--GENERIC STYLES--*/
-html {
-    font-size: 15px;
-}
-
 body {
     background: var(--darkBlue);
+    font-weight: 400;
+    font-size: 15px;
 }
 
 h1, h3 {
@@ -37,9 +35,10 @@ main.main-content {
     background: var(--darkUnsaturatedBlue);
     
     max-height: 90vh;
+    height: 72.3vh;
     width: 80vw;
     margin: 70px auto auto auto;
-    border-radius: 7px;
+    border-radius: 10px;
 
     display: flex;
     flex-direction: row;
@@ -47,13 +46,30 @@ main.main-content {
     justify-content: center;
 }
 
-main.main-content img {
+main.main-content div.header-img {
     order: 2;
-    height: 436px;
+    height: 446px;
     width: 540px;
-    object-fit: cover;
-    border-radius: 0 7px 7px 0;
+    background-image: url('images/image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 0 10px 10px 0;
 }
+
+main.main-content div.header-img div.overlay {
+    background: var(--lightViolet);
+    height: 100%;
+    opacity: .5;
+    
+}
+main.main-content div.header-img div.overlay div.overlay-child {
+    background: var(--lightViolet);
+    height: 100%;
+    mix-blend-mode: color-burn;
+    opacity: .1;
+}
+
 
 main.main-content section.card-content {
     display: flex;
@@ -93,6 +109,11 @@ main.main-content section.card-content section.card-stats {
     line-height: 0;
 }
 
+main.main-content section.card-content section.card-stats h3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
 main.main-content section.card-content section.card-stats div.card-stats-1 {
     display: flex;
     flex-direction: column;
@@ -125,10 +146,12 @@ footer.attribution {
 }
 
 footer.attribution p a {
+    color: var(--lightViolet);
     text-decoration: none;
-    transition: color ease-in-out;
+    transition: all ease-in-out;
 }
 
 footer.attribution p a:hover {
-    color: var(--lightViolet);
+    color: var(--darkUnsaturatedBlue);
+    background-color: var(--lightViolet);
 }
