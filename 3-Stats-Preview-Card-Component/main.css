@@ -100,7 +100,7 @@ main section.card {
 
 
 main section.card h1 {
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-weight: 700;
     margin: 0 35px 40px;
     padding: 0 .5rem;
@@ -113,7 +113,7 @@ main section.card h1 span {
 
 main section.card div.card-content > p {
     margin: 0 45px 60px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.5;
     color: var(--secondaryWhite);
 }
@@ -127,7 +127,7 @@ main section.card div.card-content ul.card-stats {
     display: flex;
     justify-content: space-between;
     letter-spacing: 1.3px;
-    margin: 0 3rem;
+    margin: 0 8rem 0 3rem;
 }
 
 main section.card div.card-content ul.card-stats li h2 {
@@ -141,23 +141,120 @@ main section.card div.card-content ul.card-stats p {
 }
 
 /*--MOBILE RESPONSIVE STYLES--*/
-/* @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 12px;
+    }
+    main {
+        margin: 12rem auto;
+    }
+    main section.card {
+        padding: 3rem 4.5rem 3rem 3rem;
+    }
+    main section.card h1 {
+        font-size: 2.8rem;
+        margin: 0 -10px 40px 20px;
+    }
+    main section.card div.card-content > p {
+        font-size: 1.18rem;
+        margin-left: 30px;
+        width: 90%;
+        line-height: 1.7;
+    }
+    main section.card div.card-content ul.card-stats {
+        margin: 0 8rem 0 30px;
+        letter-spacing: 1.5px;
+    }
+
+    main section.card div.card-content ul.card-stats p {
+        font-size: 1.1rem;
+    }
+
+    main section.card div.card-content ul.card-stats li h2 {
+        font-size: 1.8rem;
+        margin-bottom: .2rem;
+    }
 
 }
 
-/* @media only screen and (max-width: 635px) {
+@media only screen and (max-width: 625px) {
+    body {
+        flex-direction: column;
+    }
+    main {
+        flex-direction: column-reverse;
+        margin: 8px;
+        min-width: 200px;
+        margin-top: 5rem;
+    }
+    main section.card {
+        width: 300px;
+        padding: 0;
+        border-radius: 0 0 10px 10px;
+    }
+    main section.card h1 {
+        font-size: 1.7rem;
+        margin: 30px 20px 40px;
+        padding: 0;
+    }
+    main section.card div.card-content > p {
+        margin: 0 30px 60px;
+        font-size: .9rem;
+        line-height: 1.75;
+    }
+    main section.card h1, main section.card div.card-content > p {
+        text-align: center;
+    }
+    main section.card div.card-content {
+        margin-right: 0;
+    }
+    main section.card div.card-content ul.card-stats {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 6rem 0;
+    }
+    main section.card div.card-content ul.card-stats li {
+        margin-bottom: 2rem;
+    }
+    main section.card div.card-content ul.card-stats li h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 0.25em;
+    }
+    main section.card div.card-content ul.card-stats li p {
+        font-size: 1.05rem;
+    }
+    main div.header-img {
+        min-height: 220px;
+        width: 300px;
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
     
-
-} */
+        background: url('Images/image-header-mobile.jpg') no-repeat;
+        background-size: cover;
+    }
+    main div.header-img div.overlay, main div.header-img div.overlay div.overlay-child {
+        height: 220px;
+    }
+    .attribution {
+        position: relative;
+        margin: 60px auto 10px;
+    }
+}
 
 /*--FOOTER--*/
 footer.attribution {
     margin-top: 10px;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
+}
+
+footer.attribution p {
+    margin-bottom: .5rem;
 }
 
 footer.attribution p a {
+    font-weight: 700;
     color: var(--lightViolet);
     text-decoration: none;
     transition: all ease-in-out;
@@ -166,4 +263,6 @@ footer.attribution p a {
 footer.attribution p a:hover {
     color: var(--darkUnsaturatedBlue);
     background-color: var(--lightViolet);
+    border-radius: 5px;
+    padding: 5px;
 }
