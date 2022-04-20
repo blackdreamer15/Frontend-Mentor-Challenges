@@ -203,6 +203,7 @@ main section.card div.card-content ul.card-stats p {
         line-height: 1.75;
     }
     main section.card h1, main section.card div.card-content > p {
+        margin: 20px auto 30px;
         text-align: center;
     }
     main section.card div.card-content {
