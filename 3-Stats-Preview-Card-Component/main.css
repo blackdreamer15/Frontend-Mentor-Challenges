@@ -12,50 +12,66 @@
 }
 
 /*--GENERIC STYLES--*/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: var(--darkBlue);
+    color: var(--mainWhite);
+
+    font-family: Inter, "Lexend Deca", sans-serif;
     font-weight: 400;
     font-size: 15px;
-}
-
-h1, h3 {
-    font-family: 'Inter', sans-serif;
-    color: var(--mainWhite);
     
-}
-
-p {
-    font-family: 'Lexend Deca', sans-serif;
-    color: var(--secondaryWhite);
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /*--SPECIFIC STYLES--*/
-main.main-content {
-    background: var(--darkUnsaturatedBlue);
-    
-    max-height: 90vh;
-    height: 72.3vh;
-    width: 80vw;
-    margin: 70px auto auto auto;
-    border-radius: 10px;
-
+main {
+    min-width: 70vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    min-height: 70vh;
+    margin: 0 10rem;
 }
 
-main.main-content div.header-img {
+
+main div.header-img {
     order: 2;
-    height: 446px;
+
+    min-height: 446px;
     width: 540px;
-    background-image: url('images/image-header-desktop.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+    min-width: 200px;
+
     border-radius: 0 10px 10px 0;
+    overflow: hidden;
+
+    background: url('images/image-header-desktop.jpg') no-repeat;
+    background-size: cover;
 }
+
+main div.header-img div.overlay {
+    background: var(--lightViolet);
+    height: 100%;
+    opacity: .5;
+}
+
+main div.header-img div.overlay div.overlay-child {
+    background: var(--lightViolet);
+    height: 100%;
+    mix-blend-mode: color-burn;
+    opacity: .1;
+}
+
+
 
 main.main-content div.header-img div.overlay {
     background: var(--lightViolet);
@@ -70,79 +86,75 @@ main.main-content div.header-img div.overlay div.overlay-child {
     opacity: .1;
 }
 
-
-main.main-content section.card-content {
+main section.card {
+    background: var(--darkUnsaturatedBlue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50.5%;
+    z-index: 1;
+    border-radius: 10px 0 0 10px;
+    width: 55%;
 }
 
-main.main-content section.card-content section.card-heading h1 {
-    margin: 20px 50px auto;
-    padding: 10px 10px;
-    font-size: 2.5rem;
+
+
+main section.card h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 35px 40px;
+    padding: 0 .5rem;
+
 }
 
-main.main-content section.card-content section.card-heading h1 span {
+main section.card h1 span {
     color: var(--lightViolet);
 }
 
-main.main-content section.card-content section.card-heading p {
-    margin: 30px 100px 0 60px;
-    line-height: 1.7;
+main section.card div.card-content > p {
+    margin: 0 45px 60px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--secondaryWhite);
 }
 
+main section.card div.card-content {
+    margin-right: 2.5rem;
+}
 
-main.main-content section.card-content section.card-stats {
-    display: flex; 
-    margin-top: 35px;
+main section.card div.card-content ul.card-stats {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    width: 80%;
-    padding: 0 10px;
-    line-height: 0;
+    justify-content: space-between;
+    letter-spacing: 1.3px;
+    margin: 0 3rem;
 }
 
-main.main-content section.card-content section.card-stats h3 {
+main section.card div.card-content ul.card-stats li h2 {
     font-weight: 700;
-    font-size: 1.3rem;
 }
 
-main.main-content section.card-content section.card-stats div.card-stats-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 30%;
-    padding: 0;
+main section.card div.card-content ul.card-stats p {
+    font-size: 0.85rem;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--secondaryWhite);
 }
 
-main.main-content section.card-content section.card-stats div.card-stats-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 30%;
+/*--MOBILE RESPONSIVE STYLES--*/
+/* @media only screen and (max-width: 1024px) {
+
+}
+
+/* @media only screen and (max-width: 635px) {
     
-}
 
-main.main-content section.card-content section.card-stats div.card-stats-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 30%;
-}
+} */
 
 /*--FOOTER--*/
 footer.attribution {
+    margin-top: 10px;
     text-align: center;
+    font-size: 12px;
 }
 
 footer.attribution p a {
