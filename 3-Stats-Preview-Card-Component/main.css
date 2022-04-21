@@ -7,260 +7,137 @@
     --darkBlue: hsl(233, 47%, 7%);
     --darkUnsaturatedBlue: hsl(244, 38%, 16%);
     --lightViolet: hsl(277, 64%, 61%);
-    --mainWhite: hsl(0, 0%, 100%);
-    --secondaryWhite: hsla(0, 0%, 100%, 0.75);
+    --prim-white: hsl(0, 0%, 100%);
+    --secondary-white: hsla(0, 0%, 100%, 0.75);
+    --tertiary-white: hsla(0, 0%, 100%, 0.6);
 }
 
 /*--GENERIC STYLES--*/
 *, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background: var(--darkBlue);
-    color: var(--mainWhite);
-
+    color: var(--prim-white);
     font-family: Inter, "Lexend Deca", sans-serif;
-    font-weight: 400;
     font-size: 15px;
-    
-    min-height: 100vh;
-    
+    font-weight: 400;
+    margin: 3rem auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-
-/*--SPECIFIC STYLES--*/
 main {
-    min-width: 70vw;
-    display: flex;
-    min-height: 70vh;
-    margin: 0 10rem;
-}
-
-
-main div.header-img {
-    order: 2;
-
-    min-height: 446px;
-    width: 540px;
+    background-color: var(--darkUnsaturatedBlue);
+    min-height: 60vh;
     min-width: 200px;
-
-    border-radius: 0 10px 10px 0;
-    overflow: hidden;
-
-    background: url('images/image-header-desktop.jpg') no-repeat;
-    background-size: cover;
-}
-
-main div.header-img div.overlay {
-    background: var(--lightViolet);
-    height: 100%;
-    opacity: .5;
-}
-
-main div.header-img div.overlay div.overlay-child {
-    background: var(--lightViolet);
-    height: 100%;
-    mix-blend-mode: color-burn;
-    opacity: .1;
-}
-
-
-
-main.main-content div.header-img div.overlay {
-    background: var(--lightViolet);
-    height: 100%;
-    opacity: .5;
-    
-}
-main.main-content div.header-img div.overlay div.overlay-child {
-    background: var(--lightViolet);
-    height: 100%;
-    mix-blend-mode: color-burn;
-    opacity: .1;
-}
-
-main section.card {
-    background: var(--darkUnsaturatedBlue);
+    width: 86vw;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    border-radius: 10px 0 0 10px;
-    width: 55%;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+main section.header-img {
+    background-image: url('images/image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 456px;
+    min-width: 540px; */
+    height: 456px;
+    max-width: 100%;
+    width: 540px;
+    border-radius: 0 10px 10px 0;
+}
+main section.header-img div.overlay {
+    background-color: var(--lightViolet);
+    height: 100%;
+    opacity: .5;
+    border-radius: 0 10px 10px 0;
+}
+main section.header-img div.overlay div.overlay-child {
+    background-color: var(--lightViolet);
+    mix-blend-mode: color-burn;
+    height: 100%;
+    opacity: .5;
+    border-radius: 0 10px 10px 0;
 }
 
 
+main section.card-content {
+    width: 50.8%;
+    margin: 3rem 0 3rem 3rem;
+}
 
-main section.card h1 {
-    font-size: 3rem;
+main section.card-content h1 {
     font-weight: 700;
-    margin: 0 35px 40px;
-    padding: 0 .5rem;
-
+    font-size: 2.5rem;
+    width: 80%;
 }
 
-main section.card h1 span {
+main section.card-content h1 span {
     color: var(--lightViolet);
 }
 
-main section.card div.card-content > p {
-    margin: 0 45px 60px;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    color: var(--secondaryWhite);
-}
-
-main section.card div.card-content {
-    margin-right: 2.5rem;
-}
-
-main section.card div.card-content ul.card-stats {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: 1.3px;
-    margin: 0 8rem 0 3rem;
-}
-
-main section.card div.card-content ul.card-stats li h2 {
-    font-weight: 700;
-}
-
-main section.card div.card-content ul.card-stats p {
-    font-size: 0.85rem;
+main section.card-content > p {
     font-family: "Lexend Deca", sans-serif;
-    color: var(--secondaryWhite);
+    color: var(--secondary-white);
+    width: 70%;
+    line-height: 1.8;
+    font-size: 17px;
+    margin: 2rem 0;
 }
 
-/*--MOBILE RESPONSIVE STYLES--*/
-@media only screen and (max-width: 1024px) {
-    body {
-        font-size: 12px;
-    }
-    main {
-        margin: 12rem auto;
-    }
-    main section.card {
-        padding: 3rem 4.5rem 3rem 3rem;
-    }
-    main section.card h1 {
-        font-size: 2.8rem;
-        margin: 0 -10px 40px 20px;
-    }
-    main section.card div.card-content > p {
-        font-size: 1.18rem;
-        margin-left: 30px;
-        width: 90%;
-        line-height: 1.7;
-    }
-    main section.card div.card-content ul.card-stats {
-        margin: 0 8rem 0 30px;
-        letter-spacing: 1.5px;
-    }
-
-    main section.card div.card-content ul.card-stats p {
-        font-size: 1.1rem;
-    }
-
-    main section.card div.card-content ul.card-stats li h2 {
-        font-size: 1.8rem;
-        margin-bottom: .2rem;
-    }
-
+main section.card-content ul {
+    list-style: none;
 }
 
-@media only screen and (max-width: 625px) {
-    body {
-        flex-direction: column;
-    }
-    main {
-        flex-direction: column-reverse;
-        margin: 8px;
-        min-width: 200px;
-        margin-top: 5rem;
-    }
-    main section.card {
-        width: 300px;
-        padding: 0;
-        border-radius: 0 0 10px 10px;
-    }
-    main section.card h1 {
-        font-size: 1.7rem;
-        margin: 30px 20px 40px;
-        padding: 0;
-    }
-    main section.card div.card-content > p {
-        margin: 0 30px 60px;
-        font-size: .9rem;
-        line-height: 1.75;
-    }
-    main section.card h1, main section.card div.card-content > p {
-        margin: 20px auto 30px;
-        text-align: center;
-    }
-    main section.card div.card-content {
-        margin-right: 0;
-    }
-    main section.card div.card-content ul.card-stats {
-        flex-direction: column;
-        align-items: center;
-        margin: 0 6rem 0;
-    }
-    main section.card div.card-content ul.card-stats li {
-        margin-bottom: 2rem;
-    }
-    main section.card div.card-content ul.card-stats li h2 {
-        font-size: 1.2rem;
-        text-align: center;
-        margin-bottom: 0.25em;
-    }
-    main section.card div.card-content ul.card-stats li p {
-        font-size: 1.05rem;
-    }
-    main div.header-img {
-        min-height: 220px;
-        width: 300px;
-        border-radius: 10px 10px 0 0;
-        overflow: hidden;
-    
-        background: url('Images/image-header-mobile.jpg') no-repeat;
-        background-size: cover;
-    }
-    main div.header-img div.overlay, main div.header-img div.overlay div.overlay-child {
-        height: 220px;
-    }
-    .attribution {
-        position: relative;
-        margin: 60px auto 10px;
-    }
+main section.card-content ul li {
+    display: inline-block;
+    margin-right: 3rem;
 }
 
-/*--FOOTER--*/
+main section.card-content ul li:last-child {
+    margin-right: 0;
+}
+
+main section.card-content ul li h2 {
+    margin-bottom: .5rem;
+    font-size: 20px;
+}
+
+main section.card-content ul li p {
+    color: var(--tertiary-white);
+    font-family:  Inter, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+
+
 footer.attribution {
     margin-top: 10px;
     text-align: center;
     font-size: 13px;
 }
-
 footer.attribution p {
     margin-bottom: .5rem;
 }
-
 footer.attribution p a {
     font-weight: 700;
     color: var(--lightViolet);
     text-decoration: none;
     transition: all ease-in-out;
 }
-
 footer.attribution p a:hover {
     color: var(--darkUnsaturatedBlue);
     background-color: var(--lightViolet);
