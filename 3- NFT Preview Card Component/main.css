@@ -91,3 +91,30 @@ main section.main-content ul li p img.clock {
     width: .8rem;
 }
 
+main section.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* margin: 0rem 4rem 0 .3rem; */
+    border-top: 2px solid var(--line-color);
+    margin: 0 auto 1.5rem;
+    font-size: 15px;
+    width: 90%;
+}
+
+main section.avatar p {
+    margin-left: 0;
+    color: var(--prim-soft-blue);
+}
+
+main section.avatar img {
+    transform: scale(.7);
+    border: 2px solid var(--myWhite);
+    border-radius: 100%;
+    width: 2.5rem;
+}
+
+main section.avatar p span {
+    color: var(--myWhite);
+}
+
