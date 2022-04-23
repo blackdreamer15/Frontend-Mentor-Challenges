@@ -136,6 +136,16 @@ main section.card-content ul li p {
     }
 }
 
+@media only screen and (max-width: 1178px) {
+    main section.card-content h1 {
+        font-size: 2.18rem;
+    }
+    main section.card-content > p {
+        width: 80%;
+        font-size: 15px;
+    }
+}
+
 
 
 footer.attribution {
