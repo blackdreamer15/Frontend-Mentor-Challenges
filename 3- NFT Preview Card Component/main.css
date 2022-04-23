@@ -16,3 +16,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 18px;
+    font-family: Outfit, sans-serif;
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.5rem auto;
+}
+
