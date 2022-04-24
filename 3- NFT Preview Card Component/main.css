@@ -118,3 +118,26 @@ main section.avatar p span {
     color: var(--myWhite);
 }
 
+footer.attribution {
+    font-size: 13px;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+footer.attribution p {
+    line-height: 1.4;
+    color: var(--prim-soft-blue);
+    font-weight: 400;
+}
+
+footer.attribution p a {
+    text-decoration: none;
+    color: var(--prim-cyan);
+    transition: all .5s ease-in-out;
+}
+
+footer.attribution p a:hover {
+    font-weight: 600;
+    color: var(--myWhite);
+}
+
