@@ -141,3 +141,8 @@ footer.attribution p a:hover {
     color: var(--myWhite);
 }
 
+@media screen and (max-width: 1440px) {
+    footer.attribution {
+        font-size: 15px;
+    }
+}
