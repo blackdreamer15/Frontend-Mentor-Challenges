@@ -55,6 +55,12 @@ main section.main-content h1 {
     margin: .5rem 1.2rem 1rem;
     font-size: 24px;
     color: var(--myWhite);
+    transition: color .5s ease-in-out;
+}
+
+main section.main-content h1:hover {
+    color: var(--prim-cyan);
+    cursor: pointer;
 }
 
 main section.main-content p {
@@ -116,6 +122,12 @@ main section.avatar img {
 
 main section.avatar p span {
     color: var(--myWhite);
+    transition: all .5s ease-in-out;
+}
+
+main section.avatar p span:hover {
+    color: var(--prim-cyan);
+    cursor: pointer;
 }
 
 footer.attribution {
