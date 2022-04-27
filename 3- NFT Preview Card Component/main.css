@@ -29,7 +29,7 @@ body {
 
 main {
     min-height: 80vh;
-    min-width: auto;
+    min-width: 200px;
     width: 330px;
     background-color: var(--card-bg);
     display: flex;
@@ -43,11 +43,59 @@ main section.header-img {
     margin: 1.2rem 1rem .8rem;
     width: 290px;
     height: 270px;
+    position: relative;
+    transition: all .5s ease-in-out;
 }
 
-main section.header-img img {
+main section.header-img img.equilibrium {
     height: 100%;
     width: 100%;
+    border-radius: 15px;
+}
+
+main section.header-img div.view {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -8%;
+    top: -10%;
+    transform: translate(50%, 50%);
+    z-index: 999;
+}
+
+main section.header-img div.view img {
+    visibility: hidden;
+}
+
+main section.header-img:hover div.view {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -8%;
+    top: -10%;
+    transform: translate(50%, 50%);
+    z-index: 999;
+}
+
+main section.header-img:hover div.view img {
+    visibility: visible;
+}
+
+main section.header-img:hover div.overlay {
+    background-color: var(--prim-cyan);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: .5;
+    top: 0;
+    border-radius: 15px;
+}
+
+main section.header-img:hover div.overlay div.overlay-2 {
+    mix-blend-mode: color-burn;
+    background-color: var(--prim-cyan);
+    position: absolute;
+    opacity: .5;
     border-radius: 15px;
 }
 
