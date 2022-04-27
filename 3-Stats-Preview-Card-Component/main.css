@@ -79,7 +79,7 @@ main section.card-content {
 
 main section.card-content h1 {
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     width: 80%;
 }
 
@@ -93,7 +93,7 @@ main section.card-content > p {
     width: 70%;
     line-height: 1.8;
     font-size: 17px;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 main section.card-content ul {
@@ -102,7 +102,7 @@ main section.card-content ul {
 
 main section.card-content ul li {
     display: inline-block;
-    margin-right: 3rem;
+    margin-right: 4rem;
 }
 
 main section.card-content ul li:last-child {
@@ -133,7 +133,7 @@ main section.card-content ul li p {
         width: 80%;
         line-height: 1.8;
         font-size: 16px;
-        margin: 1.5rem 0;
+        margin: 1.4rem 0;
     }
     main section.header-img {
         max-width: 50%;
