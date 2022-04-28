@@ -30,7 +30,7 @@ main.container {
     min-width: 250px;
     width: 350px;
     margin: 1.5rem auto;
-    background-color: var(--very-pale-blue);
+    background-color: white;
     border-radius: 10px;
 
 }
@@ -43,3 +43,67 @@ main.container section.header-img {
     border-radius: 10px 10px 0 0;
 }
 
+main.container section.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 2rem;
+    text-align: center;
+}
+
+main.container section.content > h2 {
+    font-weight: 900;
+}
+
+main.container section.content > p {
+    color: var(--unsaturated-blue);
+    font-size: .9rem;
+    margin-top: .8rem;
+}
+
+main.container section.content div.plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2rem auto;
+}
+
+main.container section.content div.plan img {
+    width: 2.5rem;
+}
+
+main.container section.content div.plan div.pricing-plan {
+    margin-left: 1rem;
+}
+
+main.container section.content div.plan div.pricing-plan > h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+main.container section.content div.plan div.pricing-plan > p {
+    font-size: 1rem;
+    color: var(--unsaturated-blue);
+}
+
+main.container section.content div.plan div.pricing-plan > p > a {
+}
+
+main.container section.content div.plan > p {
+    margin-left: 2.2rem;
+    color: var(--main-bright-blue);
+    font-weight: 700;
+    font-size: .9rem;
+    color: var(--unsaturated-blue);
+}
+
+main.container section.content div.plan > p > a {
+    margin-left: 2.2rem;
+    color: var(--main-bright-blue);
+    font-weight: 700;
+    font-size: .9rem;
+}
