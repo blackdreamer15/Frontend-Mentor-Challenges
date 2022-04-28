@@ -47,6 +47,10 @@ main section.header-img {
     transition: all .5s ease-in-out;
 }
 
+main section.header-img:hover {
+    cursor: pointer;
+}
+
 main section.header-img img.equilibrium {
     height: 100%;
     width: 100%;
@@ -76,7 +80,6 @@ main section.header-img:hover div.view {
     transform: translate(50%, 50%);
     z-index: 999;
 }
-
 main section.header-img:hover div.view img {
     visibility: visible;
 }
@@ -90,7 +93,6 @@ main section.header-img:hover div.overlay {
     top: 0;
     border-radius: 15px;
 }
-
 main section.header-img:hover div.overlay div.overlay-2 {
     mix-blend-mode: color-burn;
     background-color: var(--prim-cyan);
