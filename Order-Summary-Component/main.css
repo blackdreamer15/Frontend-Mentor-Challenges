@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 :root {
     --main-pale-blue: hsl(225, 100%, 94%);
@@ -16,5 +16,30 @@
 
 body {
     font-size: 16px;
-    font-family: ;
+    font-family: 'Red Hat Display', sans-serif;
+    background: url('images/pattern-background-desktop.svg') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+main.container {
+    min-height: 80vh;
+    min-width: 250px;
+    width: 350px;
+    margin: 1.5rem auto;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+
+}
+
+main.container section.header-img {
+    height: 200px;
+    width: auto;
+    background: url('images/illustration-hero.svg') no-repeat;
+    background-size: contain;
+    border-radius: 10px 10px 0 0;
+}
+
