@@ -1,0 +1,33 @@
+
+
+
+:root {
+    --prim-violet: hsl(257, 40%, 49%);
+    --prim-soft-magenta: hsl(300, 69%, 71%);
+    
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* footer.attribution {
+    font-size: 13px;
+    text-align: center;
+}
+
+footer.attribution p {
+    line-height: 1.4;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+footer.attribution p a {
+    text-decoration: none;
+    color: var(--main-bright-blue);
+    transition: all .5s ease-in-out;
+} */
