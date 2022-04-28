@@ -107,3 +107,21 @@ main.container section.content div.plan > p > a {
     font-weight: 700;
     font-size: .9rem;
 }
+
+main.container section.content button {
+    background-color: var(--main-bright-blue);
+    border: none;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 7px var(--main-bright-blue);
+}
+
+main.container section.content button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
