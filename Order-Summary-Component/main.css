@@ -29,12 +29,11 @@ main.container {
     min-height: 80vh;
     min-width: 250px;
     width: 350px;
-    margin: 1.5rem auto;
+    margin: 1.5rem auto 1rem;
     background-color: white;
     border-radius: 10px;
 
 }
-
 
 h2, h3 {
     color: var(--dark-blue);
@@ -138,4 +137,21 @@ main.container section.content p.cancel a {
     color: var(--unsaturated-blue);
     text-decoration: none;
     font-weight: 700;
+}
+
+footer.attribution {
+    font-size: 13px;
+    text-align: center;
+}
+
+footer.attribution p {
+    line-height: 1.4;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+footer.attribution p a {
+    text-decoration: none;
+    color: var(--main-bright-blue);
+    transition: all .5s ease-in-out;
 }
