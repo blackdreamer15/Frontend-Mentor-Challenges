@@ -35,6 +35,11 @@ main.container {
 
 }
 
+
+h2, h3 {
+    color: var(--dark-blue);
+}
+
 main.container section.header-img {
     height: 200px;
     width: auto;
