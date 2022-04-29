@@ -69,7 +69,7 @@ main.container section.content div.plan {
     background-color: var(--very-pale-blue);
     border-radius: 10px;
     padding: 10px;
-    margin: 2rem auto;
+    margin: 1.6rem auto;
 }
 
 main.container section.content div.plan img {
@@ -115,7 +115,7 @@ main.container section.content button {
     padding: 10px;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0px 2px 7px var(--main-bright-blue);
+    box-shadow: 0px 2px 10px var(--main-bright-blue);
 }
 
 main.container section.content button a {
@@ -125,3 +125,12 @@ main.container section.content button a {
     font-family: 'Red Hat Display', sans-serif;
 }
 
+main.container section.content p.cancel {
+    margin: 1rem auto 2rem;
+}
+
+main.container section.content p.cancel a {
+    color: var(--unsaturated-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
