@@ -101,14 +101,14 @@ main section.header-img:hover div.overlay div.overlay-2 {
     border-radius: 15px;
 }
 
-main section.main-content h1 {
+main section.main-content h2 {
     margin: .5rem 1.2rem 1rem;
     font-size: 24px;
     color: var(--myWhite);
     transition: color .5s ease-in-out;
 }
 
-main section.main-content h1:hover {
+main section.main-content h2:hover {
     color: var(--prim-cyan);
     cursor: pointer;
 }
