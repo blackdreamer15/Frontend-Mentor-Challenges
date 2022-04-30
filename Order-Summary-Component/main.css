@@ -99,10 +99,6 @@ main.container section.content div.plan div.pricing-plan > p > a {
 
 main.container section.content div.plan > p {
     margin-left: 2.2rem;
-    color: var(--main-bright-blue);
-    font-weight: 700;
-    font-size: .9rem;
-    color: var(--unsaturated-blue);
 }
 
 main.container section.content div.plan > p > a {
@@ -110,6 +106,11 @@ main.container section.content div.plan > p > a {
     color: var(--main-bright-blue);
     font-weight: 700;
     font-size: .9rem;
+}
+
+main.container section.content div.plan > p > a:hover {
+    color: hsla(245, 75%, 52%, 0.705);
+    text-decoration: none;
 }
 
 main.container section.content button {
@@ -121,13 +122,16 @@ main.container section.content button {
     border-radius: 10px;
     box-shadow: 0px 2px 10px var(--main-bright-blue);
 }
-
+main.container section.content button:hover {
+    background-color: hsla(245, 75%, 52%, 0.705);
+}
 main.container section.content button a {
     color: white;
     text-decoration: none;
     font-weight: 700;
     font-family: 'Red Hat Display', sans-serif;
 }
+
 
 main.container section.content p.cancel {
     margin: 1rem auto 2rem;
@@ -138,6 +142,12 @@ main.container section.content p.cancel a {
     text-decoration: none;
     font-weight: 700;
 }
+
+main.container section.content p.cancel:hover a {
+    color: var(--dark-blue);
+}
+
+
 
 footer.attribution {
     font-size: 13px;
