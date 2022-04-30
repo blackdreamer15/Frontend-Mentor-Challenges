@@ -12,6 +12,59 @@
     --prim-white: hsl(0, 0%, 100%);
 }
 
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', 'Poppins', sans-serif;
+    color: var(--prim-white);
+    background-color: var(--prim-violet);
+    background-image: url('images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container {
+    margin: auto;
+    max-width: 100%;
+    width: 90%;
+}
+
+/* div.container header {
+    height: ;
+    max-width: 100%;
+}
+
+div.container header img {
+    width: ;
+}
+
+
+div.container main {}
+
+div.container main div.hero-img {}
+div.container main div.hero-img img {}
+
+div.container main div.hero-content {}
+
+div.container main div.hero-content h1 {}
+
+div.container main div.hero-content p {}
+
+div.container main div.hero-content button {}
+
+div.container main div.hero-content button a {}
+
+
+div.container footer {}
+
+div.container footer ul.socials {}
+
+div.container footer ul.socials li {}
+
+div.container footer ul.socials li a {} */
 
 
 /* font-family: 'Open Sans', sans-serif;
