@@ -39,7 +39,7 @@ main {
     border-radius: 15px;
 }
 
-main section.header-img {
+main div.header-img {
     margin: 1.2rem 1rem .8rem;
     max-width: 290px;
     max-height: auto;
@@ -48,17 +48,17 @@ main section.header-img {
     transition: all .5s ease-in-out;
 }
 
-main section.header-img:hover {
+main div.header-img:hover {
     cursor: pointer;
 }
 
-main section.header-img img.equilibrium {
+main div.header-img img.equilibrium {
     height: 100%;
     width: 100%;
     border-radius: 15px;
 }
 
-main section.header-img div.view {
+main div.header-img div.view {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -68,11 +68,11 @@ main section.header-img div.view {
     z-index: 999;
 }
 
-main section.header-img div.view img {
+main div.header-img div.view img {
     visibility: hidden;
 }
 
-main section.header-img:hover div.view {
+main div.header-img:hover div.view {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -81,11 +81,11 @@ main section.header-img:hover div.view {
     transform: translate(50%, 50%);
     z-index: 999;
 }
-main section.header-img:hover div.view img {
+main div.header-img:hover div.view img {
     visibility: visible;
 }
 
-main section.header-img:hover div.overlay {
+main div.header-img:hover div.overlay {
     background-color: var(--prim-cyan);
     height: 100%;
     width: 100%;
@@ -94,7 +94,7 @@ main section.header-img:hover div.overlay {
     top: 0;
     border-radius: 15px;
 }
-main section.header-img:hover div.overlay div.overlay-2 {
+main div.header-img:hover div.overlay div.overlay-2 {
     mix-blend-mode: color-burn;
     background-color: var(--prim-cyan);
     position: absolute;
@@ -102,26 +102,26 @@ main section.header-img:hover div.overlay div.overlay-2 {
     border-radius: 15px;
 }
 
-main section.main-content h2 {
+main div.main-content h2 {
     margin: .5rem 1.2rem 1rem;
     font-size: 24px;
     color: var(--myWhite);
     transition: color .5s ease-in-out;
 }
 
-main section.main-content h2:hover {
+main div.main-content h2:hover {
     color: var(--prim-cyan);
     cursor: pointer;
 }
 
-main section.main-content p {
+main div.main-content p {
     margin: 0 1.2rem 0;
     color: var(--prim-soft-blue);
     font-size: 15px;
     line-height: 1.5;
 }
 
-main section.main-content ul {
+main div.main-content ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -129,26 +129,26 @@ main section.main-content ul {
     margin: 1rem auto 1rem;
 }
 
-main section.main-content ul li:first-of-type p {
+main div.main-content ul li:first-of-type p {
     color: var(--prim-cyan);
     font-weight: 600;
 }
 
-main section.main-content ul li:last-child {
+main div.main-content ul li:last-child {
     margin-right: .3rem;
 }
 
-main section.main-content ul li p img {
+main div.main-content ul li p img {
     transform: scale(1.3);
 }
-main section.main-content ul li p img.crypto {
+main div.main-content ul li p img.crypto {
     width: .45rem;
 }
-main section.main-content ul li p img.clock {
+main div.main-content ul li p img.clock {
     width: .8rem;
 }
 
-main section.avatar {
+main div.avatar {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -159,24 +159,24 @@ main section.avatar {
     width: 90%;
 }
 
-main section.avatar p {
+main div.avatar p {
     margin-left: 0;
     color: var(--prim-soft-blue);
 }
 
-main section.avatar img {
+main div.avatar img {
     transform: scale(.7);
     border: 2px solid var(--myWhite);
     border-radius: 100%;
     width: 2.5rem;
 }
 
-main section.avatar p span {
+main div.avatar p span {
     color: var(--myWhite);
     transition: all .5s ease-in-out;
 }
 
-main section.avatar p span:hover {
+main div.avatar p span:hover {
     color: var(--prim-cyan);
     cursor: pointer;
 }
