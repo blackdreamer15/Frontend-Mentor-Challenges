@@ -15,6 +15,7 @@
 body {
     font-size: 16px;
     font-family: 'Open Sans', 'Poppins', sans-serif;
+    font-weight: 400;
     color: var(--prim-white);
     background-color: var(--prim-violet);
     background-image: url('images/bg-desktop.svg');
@@ -32,32 +33,67 @@ div.container {
     width: 90%;
 }
 
-/* div.container header {
-    height: ;
+div.container header {
+    height: 4rem;
     max-width: 100%;
+    margin: 1.4rem auto 2.5rem;
 }
-
 div.container header img {
-    width: ;
+    width: 15rem;
 }
 
 
-div.container main {}
+div.container main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
 
-div.container main div.hero-img {}
-div.container main div.hero-img img {}
+div.container main div.hero-img {
+    margin-right: 4rem;
+}
 
-div.container main div.hero-content {}
+div.container main div.hero-img img {
+    max-width: 600px;
+    height: auto;
+}
 
-div.container main div.hero-content h1 {}
+div.container main div.hero-content {
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
 
-div.container main div.hero-content p {}
+div.container main div.hero-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    width: 80%;
+    font-weight: 600;
+}
 
-div.container main div.hero-content button {}
+div.container main div.hero-content p {
+    font-size: 1.1rem;
+    width: 98%;
+    margin: 1.5rem 0 1.5rem 0;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
 
-div.container main div.hero-content button a {}
+div.container main div.hero-content button {
+    background-color: var(--prim-white);
+    border: none;
+    border-radius: 40px;
+    padding: 15px 65px;
+}
 
+div.container main div.hero-content button a {
+    text-decoration: none;
+    color: var(--prim-violet);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
 
+/*
 div.container footer {}
 
 div.container footer ul.socials {}
