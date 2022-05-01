@@ -72,7 +72,7 @@ main.container section.content div.plan {
     justify-content: center;
     background-color: var(--very-pale-blue);
     border-radius: 10px;
-    padding: 10px;
+    padding: 16px;
     margin: 1.6rem auto;
 }
 
@@ -85,16 +85,14 @@ main.container section.content div.plan div.pricing-plan {
 }
 
 main.container section.content div.plan div.pricing-plan > h3 {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: .8rem;
+    transform: scale(1.1);
+    font-weight: 900;
 }
 
 main.container section.content div.plan div.pricing-plan > p {
-    font-size: 1rem;
+    font-size: .9rem;
     color: var(--unsaturated-blue);
-}
-
-main.container section.content div.plan div.pricing-plan > p > a {
 }
 
 main.container section.content div.plan > p {
