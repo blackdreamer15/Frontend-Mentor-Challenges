@@ -34,12 +34,12 @@ div.container {
 }
 
 div.container header {
-    height: 4rem;
+    height: 3.5rem;
     max-width: 100%;
-    margin: 1.4rem auto 2.5rem;
+    margin: 1rem auto 2rem;
 }
 div.container header img {
-    width: 15rem;
+    width: 13rem;
 }
 
 
@@ -55,7 +55,7 @@ div.container main div.hero-img {
 
 div.container main div.hero-img img {
     max-width: 600px;
-    height: auto;
+    max-height: auto;
 }
 
 div.container main div.hero-content {
@@ -75,33 +75,47 @@ div.container main div.hero-content p {
     width: 98%;
     margin: 1.5rem 0 1.5rem 0;
     line-height: 1.5;
+    opacity: .8;
     font-family: 'Open Sans', sans-serif;
 }
 
 div.container main div.hero-content button {
     background-color: var(--prim-white);
     border: none;
-    border-radius: 40px;
-    padding: 15px 65px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    border-radius: 50px;
+    padding: 12px 60px;
 }
 
 div.container main div.hero-content button a {
     text-decoration: none;
     color: var(--prim-violet);
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
-/*
-div.container footer {}
+div.container footer {
+    margin-bottom: 1.2rem;
+}
 
-div.container footer ul.socials {}
+div.container footer ul.socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+}
 
-div.container footer ul.socials li {}
-
-div.container footer ul.socials li a {} */
-
-
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif; */
+div.container footer ul.socials li a {
+    text-decoration: none;
+    color: var(--prim-white);
+    border: 2px solid var(--prim-white);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
