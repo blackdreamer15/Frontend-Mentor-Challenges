@@ -42,7 +42,6 @@ div.container header img {
     width: 13rem;
 }
 
-
 div.container main {
     display: flex;
     justify-content: center;
@@ -85,6 +84,12 @@ div.container main div.hero-content button {
     box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
     border-radius: 50px;
     padding: 12px 60px;
+    transition: all .5s ease-in-out;
+}
+
+div.container main div.hero-content button:hover {
+    background-color: var(--prim-soft-magenta);
+    cursor: pointer;
 }
 
 div.container main div.hero-content button a {
@@ -93,6 +98,10 @@ div.container main div.hero-content button a {
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+}
+
+div.container main div.hero-content button:hover a {
+    color: var(--prim-white);
 }
 
 div.container footer {
@@ -118,4 +127,10 @@ div.container footer ul.socials li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .5s ease-in-out;
+}
+
+div.container footer ul.socials li a:hover {
+    color: var(--prim-soft-magenta);
+    border: 2px solid var(--prim-soft-magenta);
 }
