@@ -29,7 +29,7 @@ main.container {
     min-height: 80vh;
     min-width: 250px;
     width: 350px;
-    margin: 1.5rem auto 1rem;
+    margin: 1.5rem auto 1.5rem;
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 3px var(--main-pale-blue), -2px -2px 3px var(--main-pale-blue), -2px 2px 3px var(--main-pale-blue), 2px -2px 3px var(--main-pale-blue);
