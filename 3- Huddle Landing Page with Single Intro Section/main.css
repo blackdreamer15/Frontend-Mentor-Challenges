@@ -134,3 +134,55 @@ div.container footer ul.socials li a:hover {
     color: var(--prim-soft-magenta);
     border: 2px solid var(--prim-soft-magenta);
 }
+
+@media screen and (max-width: 768px) {
+    body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url('images/bg-mobile.svg');
+    }
+    div.container main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.container main div.hero-img {
+        margin: auto;
+    }
+    div.container main div.hero-img img {
+        max-width: 450px;
+        max-height: auto;
+    }
+    div.container main div.hero-content {
+        margin-right: 0;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    div.container main div.hero-content h1 {
+        margin: 2.5rem auto 0;
+        font-size: 2rem;
+        width: 90%;
+        text-align: center;
+    }
+    div.container main div.hero-content p {
+        width: 88%;
+        margin: 1.5rem auto;
+        text-align: center;
+        line-height: 1.7;
+        font-size: 1.2rem;
+    }
+    div.container main div.hero-content button {
+        width: 50%;
+    }
+    div.container footer {
+        margin: 2rem auto 2rem;
+    }
+    
+    div.container footer ul.socials {
+        justify-content: center;
+    }
+}
