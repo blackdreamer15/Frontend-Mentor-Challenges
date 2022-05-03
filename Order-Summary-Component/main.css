@@ -18,6 +18,7 @@ body {
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
     background: url('images/pattern-background-desktop.svg') no-repeat;
+    background-color: hsl(225, 100%, 94%);
     background-size: contain;
     display: flex;
     flex-direction: column;
