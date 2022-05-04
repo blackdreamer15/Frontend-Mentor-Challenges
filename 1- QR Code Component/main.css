@@ -26,18 +26,20 @@ body {
 
 main.container {
     background-color: var(--white);
-    height: 460px;
-    width: 300px;
+    /* min-height: 65vh; */
+    height: 480px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 15px;
+    margin: 0 auto;
 }
 
 main.container img.qr-code-img {
-    height: 260px;
-    width: 270px;
+    max-height: auto;
+    width: 295px;
     border-radius: 10px;
 }
 
@@ -46,15 +48,18 @@ main.container div.content {
     padding: 20px;
 }
 
-
 main.container div.content p {
     color: var(--grayishBlue);
-    margin: 15px auto 0;
+    margin: 12px auto 0;
+}
+
+main.container div.content h1 {
+    font-size: 1.4rem !important;
 }
 
 /*---- CODER'S ATTRIBUTION----*/
 footer.attribution {
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
     margin-top: 20px;
 }
