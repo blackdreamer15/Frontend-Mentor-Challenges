@@ -135,7 +135,7 @@ div.container footer ul.socials li a:hover {
     border: 2px solid var(--prim-soft-magenta);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     body{
         flex-direction: column;
         align-items: center;
@@ -169,14 +169,50 @@ div.container footer ul.socials li a:hover {
         justify-content: center;
     }
     div.container main div.hero-content h1 {
-        width: 100%;
+        width: 90%;
         margin: 2.5rem auto 0;
         font-size: 2rem;
         text-align: center;
     }
     div.container main div.hero-content p {
+        width: 80%;
         margin: 1.5rem auto;
         text-align: center;
+        line-height: 1.7;
+        font-size: 1.2rem;
+    }
+    div.container main div.hero-content button {
+        width: 50%;
+    }
+    div.container main div.hero-content button a {
+        text-align: center;
+        margin: auto;
+    }
+    div.container footer {
+        margin: 2rem auto 2rem;
+    }
+    div.container footer ul.socials {
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width:1024px) {
+    div.container main div.hero-img img {
+        max-width: 550px;
+        max-height: auto;
+    }
+    div.container main div.hero-content {
+        margin: 0 auto 2rem;
+    }
+    div.container main div.hero-content h1 {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+    div.container main div.hero-content p {
+        margin: 1.5rem auto;
         line-height: 1.7;
         font-size: 1.2rem;
     }
@@ -186,12 +222,5 @@ div.container footer ul.socials li a:hover {
     }
     div.container footer {
         margin: 2rem auto 2rem;
-
-    }
-    
-    div.container footer ul.socials {
-        justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
     }
 }
