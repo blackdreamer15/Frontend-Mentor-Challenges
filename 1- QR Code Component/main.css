@@ -70,4 +70,11 @@ footer.attribution p:last-child {
 
 footer.attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+footer.attribution a:hover {
+    color: #3281a8;
 }
