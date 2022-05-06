@@ -1,7 +1,7 @@
 # Frontend Mentor - QR code component solution
 
 This is my proposed solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
-Frontend Mentor challenges can help you improve your coding skills by building realistic projects. 
+Frontend Mentor challenges can help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -13,7 +13,6 @@ Frontend Mentor challenges can help you improve your coding skills by building r
   - [Useful resources and Key snippets](#useful-resources-and-key-snippets)
 - [Author](#author)
 
-
 ## Overview
 
 ### Screenshot
@@ -22,16 +21,14 @@ Frontend Mentor challenges can help you improve your coding skills by building r
 
 ![Desktop Preview](./preview/Screenshot%20(856).png)
 
-
-
 ### Links
 
 - Solution URL: [Click here to check out the solution on Frontend Mentor](https://www.frontendmentor.io/solutions/qr-code-component-project-rJ9h8KLm9)
 - Live Site URL: [Click here to preview the site](https://qr-code-component-page.netlify.app/)
 
-## My process
-For this challenge, I started by creating a semantic markup of my code and added some content. I moved on to the CSS by declaring some custom properties. I worked with flexbox and manipulated the box model to make the QR Code Component responsive and static on all devices. I then styled it by adding some colours and a convenient font. Finally, I touched on the border-radii.
+## My Process
 
+For this challenge, I started by creating a semantic markup of my code and added some content. I moved on to the CSS by declaring some custom properties. I worked with flexbox and manipulated the box model to make the QR Code Component responsive and static on all devices. I then styled it by adding some colors and a convenient font. Finally, I touched on the border-radii.
 
 ### Built with
 
@@ -40,7 +37,6 @@ For this challenge, I started by creating a semantic markup of my code and added
 - CSS custom properties
 - Box Model
 - Flexbox
-
 
 ### Useful resource(s) and Key snippets
 
@@ -58,6 +54,7 @@ This are some key portions of my code:
   </div>
 </main>
 ```
+
 ```css
 main.container {
     background-color: var(--white);
@@ -77,6 +74,5 @@ main.container {
 - Frontend Mentor - [@blackdreamer15](https://www.frontendmentor.io/profile/blackdreamer15)
 - Twitter - [@jessyjulien_](https://www.twitter.com/jessyjulien_)
 - Linkedin - [Jessy J. J. Baki](https://www.linkedin.com/in/jessy-justice-julien-baki/)
-
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7f13abc3-5452-4181-b448-d3b0483d6a18/deploy-status)](https://app.netlify.com/sites/qr-code-component-page/deploys)
