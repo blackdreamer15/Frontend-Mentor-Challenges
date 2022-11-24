@@ -14,4 +14,9 @@
     --belleFair-font: "Bellefair", serif;
     --barlow-font: "Barlow", sans-serif;
     --barlowCondensed--font: "Barlow Condensed", sans-serif;
+
+    --dark-color: hsl(230, 35%, 7%);
+    --fog-color: hsl(231, 77%, 90%);
+    --light-color: hsl(0, 0%, 100%);
+    --half-trans: rgba(255, 255, 255, 0.5);
 }
