@@ -17,7 +17,7 @@
 
     --dark-color: hsl(230, 35%, 7%);
     --fog-color: hsl(231, 77%, 90%);
-    --light-color: hsl(0, 0%, 100%);
+    --white-color: hsl(0, 0%, 100%);
     --half-trans: rgba(255, 255, 255, 0.5);
 }
 section.destination {
@@ -48,7 +48,7 @@ section.destination .destination__img-box h1.img-box__heading {
     text-align: center;
     font-family: var(--barlowCondensed--font);
     font-weight: 400;
-    color: var(--light-color);
+    color: var(--white-color);
 }
 
 section.destination .destination__img-box h1.img-box__heading > span {
