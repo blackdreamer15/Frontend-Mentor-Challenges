@@ -33,3 +33,28 @@ section.destination {
     justify-content: center;
     align-items: center;
 }
+
+
+section.destination .destination__img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.destination .destination__img-box h1.img-box__heading {
+    margin-bottom: 3.75rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--barlowCondensed--font);
+    font-weight: 400;
+    color: var(--light-color);
+}
+
+section.destination .destination__img-box h1.img-box__heading > span {
+    color: var(--half-trans);
+}
+
+section.destination .destination__img-box img#destination__img {
+    width: 11rem;
+ }
