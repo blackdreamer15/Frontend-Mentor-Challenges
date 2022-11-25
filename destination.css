@@ -108,3 +108,13 @@ section.destination .destination__content .destination__navbar a.navbar__link:fo
 section.destination .destination__content .destination__navbar a.navbar__link:focus::before {
     transform: scaleX(100%);
 }
+
+
+section.destination .destination__content h1#destination__title {
+    font-family: var(--belleFair-font);
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-top: 1.6rem;
+}
