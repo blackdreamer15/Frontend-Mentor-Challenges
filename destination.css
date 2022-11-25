@@ -64,3 +64,11 @@ section.destination .destination__img-box img#destination__img {
     margin: 1.7rem auto 0;
     text-align: center;
 }
+
+section.destination .destination__navbar {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2.2rem;
+}
