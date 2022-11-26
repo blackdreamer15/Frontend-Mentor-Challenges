@@ -41,7 +41,6 @@ section.destination .destination__img-box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
     /* width: 100%; */
 }
 
@@ -49,7 +48,6 @@ section.destination .destination__img-box h1.img-box__heading {
     margin-bottom: 3.75rem;
     text-transform: uppercase;
     text-align: center;
-    background-color: red;
     font-family: var(--barlowCondensed--font);
     font-weight: 400;
     color: var(--white-color);
