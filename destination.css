@@ -20,10 +20,11 @@
     --white-color: hsl(0, 0%, 100%);
     --half-trans: rgba(255, 255, 255, 0.5);
 }
+
 section.destination {
     min-height: 100vh;
     width: 100%;
-    padding-top: 8.5rem;
+    padding: 100px 20px 0 20px;
     background: url('/assets/destination/background-destination-mobile.jpg');
     background-size: cover;
     background-position: center;
@@ -40,12 +41,15 @@ section.destination .destination__img-box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: blue;
+    /* width: 100%; */
 }
 
 section.destination .destination__img-box h1.img-box__heading {
     margin-bottom: 3.75rem;
     text-transform: uppercase;
     text-align: center;
+    background-color: red;
     font-family: var(--barlowCondensed--font);
     font-weight: 400;
     color: var(--white-color);
