@@ -136,6 +136,7 @@ section.destination  .destination__content .destination__stats {
     align-items: center;
     border-top: 1px solid var(--white-color);
     padding-top: 1.8rem;
+    margin-bottom: 2.2rem;
 }
 
 
