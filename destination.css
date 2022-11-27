@@ -128,3 +128,12 @@ section.destination .destination__content p#destination__desc {
     color: var(--fog-color);
     margin: .7rem auto 3rem;
 }
+
+
+section.destination  .destination__content .destination__stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid var(--white-color);
+    padding-top: 1.8rem;
+}
