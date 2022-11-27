@@ -122,3 +122,9 @@ section.destination .destination__content h1#destination__title {
     font-weight: 400;
     margin-top: 1.6rem;
 }
+
+section.destination .destination__content p#destination__desc {
+    line-height: 1.7;
+    color: var(--fog-color);
+    margin: .7rem auto 3rem;
+}
