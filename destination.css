@@ -25,9 +25,10 @@ section.destination {
     min-height: 100vh;
     width: 100%;
     padding: 100px 20px 0 20px;
-    background: url('/assets/destination/background-destination-mobile.jpg');
+    background: url('/assets/destination/background-destination-tablet.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     display: flex;
     flex-direction: column;
