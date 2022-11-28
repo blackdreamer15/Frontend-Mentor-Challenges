@@ -65,7 +65,7 @@ section.destination .destination__img-box img#destination__img {
     text-align: center;
 }
 
-section.destination .destination__navbar {
+section.destination .destination__content .destination__navbar {
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: center;
@@ -73,7 +73,7 @@ section.destination .destination__navbar {
     grid-gap: 2.2rem;
 }
 
-section.destination .destination__navbar a.navbar__link 
+section.destination .destination__content .destination__navbar a.navbar__link 
 {
     color: var(--white-color);
     text-decoration: none;
@@ -87,7 +87,7 @@ section.destination .destination__navbar a.navbar__link
     display: inline-block;
 }
 
-section.destination .destination__navbar a.navbar__link::after {
+section.destination .destination__content .destination__navbar a.navbar__link::after {
     content: "";
     position: absolute;
     bottom: 0; left: 0;
@@ -100,11 +100,11 @@ section.destination .destination__navbar a.navbar__link::after {
     transition: .4s ease-out;
 }
 
-section.destination .destination__navbar a.navbar__link:hover::after,
-section.destination .destination__navbar a.navbar__link:focus::after {
+section.destination .destination__content .destination__navbar a.navbar__link:hover::after,
+section.destination .destination__content .destination__navbar a.navbar__link:focus::after {
     transform: scaleX(100%);
 }
 
-section.destination .destination__navbar a.navbar__link:focus::before {
+section.destination .destination__content .destination__navbar a.navbar__link:focus::before {
     transform: scaleX(100%);
 }
