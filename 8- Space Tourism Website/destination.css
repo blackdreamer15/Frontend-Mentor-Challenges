@@ -100,6 +100,11 @@ section.destination .destination__navbar a.navbar__link::after {
     transition: .4s ease-out;
 }
 
-section.destination .destination__navbar a.navbar__link:hover::after {
+section.destination .destination__navbar a.navbar__link:hover::after,
+section.destination .destination__navbar a.navbar__link:focus::after {
+    transform: scaleX(100%);
+}
+
+section.destination .destination__navbar a.navbar__link:focus::before {
     transform: scaleX(100%);
 }
