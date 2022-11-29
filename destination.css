@@ -255,7 +255,7 @@ section.destination .destination__content .destination__stats h6 {
 @media (min-width: 48rem) {
     section.destination {
         width: 100%;
-        /* padding: 8.5rem 1rem 0; */
+        padding: 8.5rem 2rem 0;
         background: url('/assets/destination/background-destination-desktop.jpg');
         /* background-size: cover;
         background-position: center;
