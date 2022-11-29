@@ -41,13 +41,14 @@ section.destination .destination__img-box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
+    width: 100%;
 }
 
 section.destination .destination__img-box h1.img-box__heading {
     margin-bottom: 3.75rem;
     text-transform: uppercase;
-    text-align: center;
+    align-self: flex-start;
+    text-align: left;
     font-family: var(--barlowCondensed--font);
     font-weight: 400;
     color: var(--white-color);
