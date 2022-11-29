@@ -225,7 +225,8 @@ section.destination .destination__content .destination__stats h6 {
 /*  RWD FOR DESKTOP   */
 @media (min-width: 48rem) {
     section.destination {
-        padding: 8.5rem 2.375rem 0 2.375rem;
+        width: 100%;
+        /* padding: 8.5rem 1rem 0; */
         background: url('/assets/destination/background-destination-desktop.jpg');
         /* background-size: cover;
         background-position: center;
@@ -233,40 +234,37 @@ section.destination .destination__content .destination__stats h6 {
 
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
 
-    /* section.destination .destination__img-box {
+    section.destination .destination__img-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-    } */
+        max-width: fit-content;
+    }
 
-    /* section.destination .destination__img-box h1.img-box__heading {
-        margin-bottom: 3.75rem;
-        text-transform: uppercase;
-        align-self: flex-start;
+    section.destination .destination__img-box h1.img-box__heading {
         text-align: left;
-        font-family: var(--barlowCondensed--font);
-        font-weight: 400;
-        color: var(--white-color);
-    } */
+        font-size: 1.8rem;
+        margin-bottom: 3.75rem;
+        margin-right: 8.5rem;
+    }
 
-    /* section.destination .destination__img-box h1.img-box__heading > span {
+    section.destination .destination__img-box h1.img-box__heading > span {
         color: var(--half-trans);
-        padding-right: .6rem;
-    } */
+        padding-right: .9rem;
+    }
 
-    /* section.destination .destination__img-box img#destination__img {
-        width: 20rem;
-    } */
+    section.destination .destination__img-box img#destination__img {
+        width: 26.2rem;
+    }
 
 
     section.destination .destination__content {
-        margin: 1.7rem auto 0;
+        margin: 1.7rem 0 0;
         text-align: left;
         max-width: 27.8125rem;
     }
@@ -284,7 +282,7 @@ section.destination .destination__content .destination__stats h6 {
 
     section.destination .destination__content p#destination__desc {
         font-family: var(--barlow-font);
-        font-size: 1.125rem;
+        font-size: 1.15rem;
         font-weight: 600;
         text-align: left;
         line-height: 2rem;
