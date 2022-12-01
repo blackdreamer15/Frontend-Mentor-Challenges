@@ -137,3 +137,14 @@ section.destination  .destination__content .destination__stats {
     border-top: 1px solid var(--white-color);
     padding-top: 1.8rem;
 }
+
+
+section.destination .destination__content .destination__stats h5 {
+    font-family: var(--barlowCondensed--font);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 2.5px;
+    color: var(--fog-color);
+}
