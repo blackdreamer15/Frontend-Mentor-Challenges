@@ -213,7 +213,6 @@ section.destination .destination__content .destination__stats h6 {
         text-align: center;
         margin: 0 auto 2.2rem;
         min-width: 100%;
-        background-color: red;
     }
 
     section.destination .destination__content .destination__stats > div {
