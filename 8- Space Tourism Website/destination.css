@@ -164,6 +164,35 @@ section.destination .destination__content .destination__stats h6 {
 
 
 
+/*  RWD FOR VERY SMALL MOBILE DEVICES   */
+@media (max-width: 22.5rem) {
+    section.destination {
+        width: 100%;
+        padding: 100px 0;
+    }
+    
+    section.destination .destination__content .destination__navbar {
+        grid-gap: .5rem;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: red;
+    }
+    
+    section.destination .destination__content {
+        max-width: 100%;
+    }
+
+    section.destination .destination__content h1#destination__title {
+        font-size: 3.2rem;
+        margin: 2rem auto 1rem;
+    }
+}
+    
+
+
 /* RWD FOR TABLET */
 @media (min-width: 26.65rem) and (max-width: 48rem) {
     section.destination {
