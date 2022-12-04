@@ -30,4 +30,14 @@ gotoMoon.addEventListener('click', () => {
     travelDuration.innerHTML = data.destinations[0].travel;
 });
 
+
+// MARS
+gotoMars.addEventListener('click', () => {
+destinationImg.src = marsImg;
+    destinationHeading.innerHTML = data.destinations[1].name;
+    destinationDesc.innerHTML = data.destinations[1].description;
+    travelDistance.innerHTML = data.destinations[1].distance;
+    travelDuration.innerHTML = data.destinations[1].travel;
+});
+
 //======== END OF DESTINATION PAGE SCRIPT ============
