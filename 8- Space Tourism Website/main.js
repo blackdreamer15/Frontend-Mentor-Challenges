@@ -21,6 +21,13 @@ const travelDistance = document.querySelector('#destination__distance-in-km');
 const travelDuration = document.querySelector('#destination__travel-duration');
 
 
-
+// MOON
+gotoMoon.addEventListener('click', () => {
+    destinationImg.src = moonImg;
+    destinationHeading.innerHTML = data.destinations[0].name;
+    destinationDesc.innerHTML = data.destinations[0].description;
+    travelDistance.innerHTML = data.destinations[0].distance;
+    travelDuration.innerHTML = data.destinations[0].travel;
+});
 
 //======== END OF DESTINATION PAGE SCRIPT ============
