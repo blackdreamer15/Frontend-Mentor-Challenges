@@ -40,4 +40,15 @@ destinationImg.src = marsImg;
     travelDuration.innerHTML = data.destinations[1].travel;
 });
 
+
+// EUROPA
+gotoEuropa.addEventListener('click', () => {
+    destinationImg.src = europaImg;
+    destinationHeading.innerHTML = data.destinations[2].name;
+    destinationDesc.innerHTML = data.destinations[2].description;
+    travelDistance.innerHTML = data.destinations[2].distance;
+    travelDuration.innerHTML = data.destinations[2].travel;
+});
+
+
 //======== END OF DESTINATION PAGE SCRIPT ============
