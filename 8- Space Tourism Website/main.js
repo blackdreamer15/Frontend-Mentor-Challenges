@@ -51,4 +51,12 @@ gotoEuropa.addEventListener('click', () => {
 });
 
 
+// TITAN
+gotoTitan.addEventListener('click', () => {
+    destinationImg.src = titanImg;
+    destinationHeading.innerHTML = data.destinations[3].name;
+    destinationDesc.innerHTML = data.destinations[3].description;
+    travelDistance.innerHTML = data.destinations[3].distance;
+    travelDuration.innerHTML = data.destinations[3].travel;
+});
 //======== END OF DESTINATION PAGE SCRIPT ============
