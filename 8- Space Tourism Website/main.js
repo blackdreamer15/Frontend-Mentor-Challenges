@@ -2,13 +2,6 @@ import data from './data.json';
 
 
 //======== START OF DESTINATION PAGE SCRIPT ============
-//DESTINATION -- IMAGES IMPORT
-import moonImg from '/src/assets/destination/image-moon.webp';
-import marsImg from '/src/assets/destination/image-mars.webp';
-import europaImg from '/src/assets/destination/image-europa.webp';
-import titanImg from '/src/assets/destination/image-titan.webp';
-
-
 const gotoMoon = document.querySelector('.destination__moon');
 const gotoMars = document.querySelector('.destination__mars');
 const gotoEuropa = document.querySelector('.destination__europa');
@@ -23,7 +16,7 @@ const travelDuration = document.querySelector('#destination__travel-duration');
 
 // MOON
 gotoMoon.addEventListener('click', () => {
-    destinationImg.src = moonImg;
+    destinationImg.src = data.destinations[0].images.webp;
     destinationHeading.innerHTML = data.destinations[0].name;
     destinationDesc.innerHTML = data.destinations[0].description;
     travelDistance.innerHTML = data.destinations[0].distance;
@@ -33,7 +26,7 @@ gotoMoon.addEventListener('click', () => {
 
 // MARS
 gotoMars.addEventListener('click', () => {
-destinationImg.src = marsImg;
+destinationImg.src = data.destinations[1].images.webp;
     destinationHeading.innerHTML = data.destinations[1].name;
     destinationDesc.innerHTML = data.destinations[1].description;
     travelDistance.innerHTML = data.destinations[1].distance;
@@ -43,7 +36,7 @@ destinationImg.src = marsImg;
 
 // EUROPA
 gotoEuropa.addEventListener('click', () => {
-    destinationImg.src = europaImg;
+    destinationImg.src = data.destinations[2].images.webp;
     destinationHeading.innerHTML = data.destinations[2].name;
     destinationDesc.innerHTML = data.destinations[2].description;
     travelDistance.innerHTML = data.destinations[2].distance;
@@ -53,7 +46,7 @@ gotoEuropa.addEventListener('click', () => {
 
 // TITAN
 gotoTitan.addEventListener('click', () => {
-    destinationImg.src = titanImg;
+    destinationImg.src = data.destinations[3].images.webp;
     destinationHeading.innerHTML = data.destinations[3].name;
     destinationDesc.innerHTML = data.destinations[3].description;
     travelDistance.innerHTML = data.destinations[3].distance;
