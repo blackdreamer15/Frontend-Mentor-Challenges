@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Bellefair&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=BarlowCondensed&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Barlow&display=swap);
 
 
@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-:root {
+ :root {
     --belleFair-font: "Bellefair", serif;
     --barlow-font: "Barlow", sans-serif;
     --barlowCondensed--font: "Barlow Condensed", sans-serif;
@@ -18,14 +18,14 @@
     --dark-color: hsl(230, 35%, 7%);
     --fog-color: hsl(231, 77%, 90%);
     --white-color: hsl(0, 0%, 100%);
-    --half-trans: rgba(255, 255, 255, 0.5);
+    --half-trans: rgba(255, 255, 255, 0.5)
 }
 
 section.destination {
     min-height: 100vh;
     width: 100%;
     padding: 100px 20px 0 20px;
-    background: url('/assets/destination/background-destination-tablet.jpg');
+    background: url('/assets/destination/background-destination-mobile.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,10 +46,9 @@ section.destination .destination__img-box {
 }
 
 section.destination .destination__img-box h1.img-box__heading {
-    margin-bottom: 3.75rem;
+    margin-bottom: 3.4rem;
     text-transform: uppercase;
-    align-self: flex-start;
-    text-align: left;
+    text-align: center;
     font-family: var(--barlowCondensed--font);
     font-weight: 400;
     color: var(--white-color);
@@ -57,14 +56,15 @@ section.destination .destination__img-box h1.img-box__heading {
 
 section.destination .destination__img-box h1.img-box__heading > span {
     color: var(--half-trans);
+    padding-right: .6rem;
 }
 
 section.destination .destination__img-box img#destination__img {
-    width: 19rem;
- }
+    width: 11rem;
+}
 
 
- section.destination .destination__content {
+section.destination .destination__content {
     margin: 0 auto;
     text-align: center;
     max-width: 576px;
@@ -78,8 +78,7 @@ section.destination .destination__content .destination__navbar {
     grid-gap: 2.2rem;
 }
 
-section.destination .destination__content .destination__navbar a.navbar__link 
-{
+section.destination .destination__content .destination__navbar a.navbar__link {
     color: var(--white-color);
     text-decoration: none;
     font-family: var(--barlowCondensed--font);
@@ -122,23 +121,36 @@ section.destination .destination__content h1#destination__title {
     text-transform: uppercase;
     font-size: 3.5rem;
     font-weight: 400;
-    margin-top: 1.6rem;
+    margin-top: 1rem;
 }
 
 section.destination .destination__content p#destination__desc {
-    line-height: 1.7;
+    font-family: var(--barlow-font);
+    font-size: 0.98rem;
+    text-align: center;
+    line-height: 1.5625rem;
     color: var(--fog-color);
-    margin: .7rem auto 3rem;
+
+    border-bottom: 1px solid var(--white-color);
+    max-width: 20rem;
+    margin: 0 auto 1.8rem;
+    padding-bottom: 2rem;
 }
 
 
-section.destination  .destination__content .destination__stats {
+
+section.destination .destination__content .destination__stats {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-top: 1px solid var(--white-color);
-    padding-top: 1.8rem;
+    flex-direction: column;
+    /* justify-content: space-between;
+    align-items: center; */
+    justify-content: stretch;
     margin-bottom: 2.2rem;
+    min-width: 80vw;
+}
+
+section.destination .destination__content .destination__stats > div {
+    margin-bottom: 2rem;
 }
 
 
@@ -164,13 +176,14 @@ section.destination .destination__content .destination__stats h6 {
 
 
 
+
 /*  RWD FOR VERY SMALL MOBILE DEVICES   */
 @media (max-width: 22.5rem) {
     section.destination {
         width: 100%;
         padding: 100px 0;
     }
-    
+
     section.destination .destination__content .destination__navbar {
         grid-gap: .5rem;
         width: 100%;
@@ -180,7 +193,7 @@ section.destination .destination__content .destination__stats h6 {
         flex-wrap: wrap;
         background-color: red;
     }
-    
+
     section.destination .destination__content {
         max-width: 100%;
     }
@@ -190,8 +203,6 @@ section.destination .destination__content .destination__stats h6 {
         margin: 2rem auto 1rem;
     }
 }
-    
-
 
 /* RWD FOR TABLET */
 @media (min-width: 26.65rem) and (max-width: 48rem) {
@@ -234,7 +245,7 @@ section.destination .destination__content .destination__stats h6 {
         padding-bottom: 3.0625rem;
 
     }
-
+    
     section.destination .destination__content .destination__stats {
         flex-direction: row;
         justify-content: space-evenly;
@@ -243,7 +254,7 @@ section.destination .destination__content .destination__stats h6 {
         margin: 0 auto 2.2rem;
         min-width: 100%;
     }
-
+    
     section.destination .destination__content .destination__stats > div {
         margin-bottom: 2rem;
     }
@@ -255,72 +266,68 @@ section.destination .destination__content .destination__stats h6 {
 @media (min-width: 48rem) {
     section.destination {
         width: 100%;
-        padding: 8.5rem 2rem 0;
+        padding: 136px 0 0;
         background: url('/assets/destination/background-destination-desktop.jpg');
-        /* background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; */
-
+    
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
     }
-
-
+    
+    
     section.destination .destination__img-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: fit-content;
+        max-width: 27.5rem;
     }
-
+    
     section.destination .destination__img-box h1.img-box__heading {
         text-align: left;
-        font-size: 1.8rem;
-        margin-bottom: 3.75rem;
+        font-size: 1.6rem;
+        margin-bottom: 6rem;
         margin-right: 8.5rem;
     }
-
+    
     section.destination .destination__img-box h1.img-box__heading > span {
-        color: var(--half-trans);
         padding-right: .9rem;
     }
-
+    
     section.destination .destination__img-box img#destination__img {
         width: 26.2rem;
     }
-
-
+    
+    
     section.destination .destination__content {
         margin: 1.7rem 0 0;
         text-align: left;
-        max-width: 27.8125rem;
+        max-width: 28rem;
     }
-
+    
     section.destination .destination__content .destination__navbar {
         justify-content: left;
         align-items: center;
     }
-
+    
     section.destination .destination__content h1#destination__title {
-        font-size: 6.25rem;
+        font-size: 6rem;
         text-align: left;
         margin-top: 2.4rem;
     }
-
+    
     section.destination .destination__content p#destination__desc {
         font-family: var(--barlow-font);
-        font-size: 1.15rem;
-        font-weight: 600;
-        text-align: left;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: justify;
         line-height: 2rem;
         color: var(--fog-color);
         margin: .9rem 0 1.7rem;
         padding-bottom: 3.375rem;
-        max-width: 100vw;
+        max-width: 86%;
     }
-
+    
     section.destination .destination__content .destination__stats {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -331,7 +338,7 @@ section.destination .destination__content .destination__stats h6 {
         min-width: 100%;
         grid-gap: 2rem;
     }
-
+    
     section.destination .destination__content .destination__stats > div {
         margin-bottom: 2rem;
     }
