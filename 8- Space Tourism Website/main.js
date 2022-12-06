@@ -2,10 +2,10 @@ import data from './data.json';
 
 
 //======== START OF DESTINATION PAGE SCRIPT ============
-const gotoMoon = document.querySelector('.destination__moon');
-const gotoMars = document.querySelector('.destination__mars');
-const gotoEuropa = document.querySelector('.destination__europa');
-const gotoTitan = document.querySelector('.destination__titan');
+const gotoMoon = document.querySelector('#destination__moon');
+const gotoMars = document.querySelector('#destination__mars');
+const gotoEuropa = document.querySelector('#destination__europa');
+const gotoTitan = document.querySelector('#destination__titan');
 
 const destinationImg = document.querySelector('#destination__img');
 const destinationHeading = document.querySelector('#destination__title');
